@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- name="viewport": responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manipulación del DOM básica</title>
+    </head>
+    <body>
+        <h1 class="verde">Manipulación del DOM básica</h1>
+        <p>Esto es un parrafo con</p>
+        <p class="parrafito">Esto es un parrafo con clases</p>
+        <p id="pid">Esto es un parrafo con ID</p>
+
+
+
+        <form id="form">
+            <input id="calculo1" placeholder="escribe algo aqui">
+            <input id="calculo2">
+            <button type="button" id="btncalcular">Calcular</button> <!-- onclick="calcularconcatenacion()" quitamos esto pq en JS ya lo estamos poniendo, pero caso tal que no este en JS tocaria ponerlo en etiqueta button como atributo -->
+            <p id="result"></p>
+        </form> <!-- form hace que el ultimo boton del formulario sea "Type= submit", lo que significa que al darle clic va recargar la pag, entonces por eso le ponemos "Type= button" como atributo al button, para que se comporte como un boton más no como submit -->
+
+
+
+
+        <form id="form2">
+            <input id="calculo3" placeholder="escribe algo aqui">
+            <input id="calculo4" placeholder="escribe algo aqui">
+            <button id="btn2">Segundo botón</button> 
+            <p id="result2"></p>   
+        </form> 
+
+        <script src="./script.js"></script> <!-- LLAMA JS, esto siempre va al final de todo el codigo de "BODY" -->
+
+    </body>
+</html>
